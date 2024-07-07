@@ -1,0 +1,59 @@
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar image styles */
+.navbar img {
+    cursor: pointer;
+    width: 90px;
+    height: auto;
+    background-color: transparent; /* Transparent background for image */
+}
+
+/* Navbar list styles */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Navbar list item styles */
+.navbar li {
+    margin: 0 .5rem;
+}
+
+/* Icon styles */
+.navbar i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform .5s ease, color .5s ease;
+}
+
+/* Hover effects for icons */
+.navbar i:hover {
+    transform: rotate(60deg);
+    color: teal;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .navbar ul {
+        justify-content: flex-end;
+    }
+
+    .navbar li {
+        margin: 0 1rem;
+    }
+}
